@@ -1,0 +1,32 @@
+// в этом файле описаны основные настройки текста
+
+nav {
+  background-color: white;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+}
+
+h2 {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+a {
+  font-size: 1.8rem;
+}

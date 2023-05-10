@@ -1,0 +1,46 @@
+.tour {
+
+  button {
+    background-color: orange;
+    color: white;
+
+  }
+
+  &-header {
+    margin-top: 0 !important;
+    padding-top: 0;
+    box-shadow: none !important;
+  }
+
+  h1 {
+    margin-bottom: 3rem;
+  }
+
+  .description-row {
+    margin: 5rem 0;
+  }
+
+  &-info {
+    padding: 4rem;
+  }
+
+  &-page-price-text {
+    margin-top: 5rem;
+  }
+
+  ul {
+    margin-bottom: 4rem;
+  }
+
+  li {
+    font-size: 2rem;
+  }
+
+}
+
+.col-12 {
+  button {
+    margin: auto;
+    margin-top: 5rem;
+  }
+}

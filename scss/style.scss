@@ -1,0 +1,10 @@
+// это основной файл sass, в который импортируются все остальные файлы
+
+@use 'profile';
+@use 'tour';
+@use 'catalog';
+@use 'bootstrap';
+@use 'color';
+@use 'typo';
+@use 'base';
+@use 'main';

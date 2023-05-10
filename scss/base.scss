@@ -1,0 +1,101 @@
+// базовые настройки
+
+@use 'color' as *;
+
+.scroll-stop {
+  overflow: hidden;
+}
+
+html {
+  font-size: 10px;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+footer {
+  box-shadow: $employers-box-shadow;
+  padding: 3rem 0;
+  box-shadow: 0 0 2px 2px lightgray;
+}
+
+button {
+  display: block;
+  font-weight: bold;
+  font-size: 1.8rem;
+  border: none;
+  padding: 1rem 6rem;
+  background-color: #fff;
+  box-shadow: $employers-box-shadow;
+  transition: all .3s;
+
+  &:hover {
+    background-color: $primary-color;
+    transform: translateY(-15%);
+  }
+}
+
+input {
+  transition: transform .3s;
+  height: 6rem;
+  width: 24rem;
+  padding: 1rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  border: none;
+  box-shadow: $employers-box-shadow;
+  display: block;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:active, 
+  &:focus,
+  &:focus-visible {
+    transform: scale(1.1);
+    outline: none;
+    border: 3px solid $primary-color;
+  }
+}
+
+select {
+  padding: .5rem 1rem;
+  background-color: $muted-color;
+  padding-right: 4rem;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  box-shadow: $employers-box-shadow;
+}
+
+.bread {
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+
+  ul {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  li {
+    a {
+      color: inherit;
+      font-weight: inherit;
+      font-size: 1.8rem;
+      font-style: italic;
+      border: unset;
+
+      &:hover {
+        border: none;
+        color: darken(orange, 20);
+      }
+    }
+  }
+
+  li.active {
+    color: orange;
+  }
+}
+
