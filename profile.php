@@ -31,7 +31,7 @@ if (!$_SESSION['user']) {
             </p>
           </div>
           <div class="col-4 text-center">
-            <h1>Турфирма</h1>
+            <h1><a href="index.php">Турфирма</a></h1>
           </div>
           <div class="col-4 text-end">
             <div class="user">

@@ -34,13 +34,13 @@ if (!empty($error_fields)) {
 
 $password = md5($password);
 
-$check_user = $connect->prepare("SELECT * FROM users WHERE email = :email AND password =:password");
+$check_user = $connect->query("SELECT * FROM users WHERE email = '$email' AND password = '$password'");
 
-$check_user->execute(array(':email' => $email, ':password' => $password));
+if ($check = $check_user->fetchColumn() !== false) {
 
-if ($check = $check_user->fetchColumn()) {
+  $user_data = $connect->query("SELECT * FROM users WHERE email = '$email' AND password = '$password'");
 
-  $user = $check_user->fetch(PDO::FETCH_ASSOC);
+  $user = $user_data->fetch(PDO::FETCH_ASSOC);
 
   $_SESSION['user'] = array(
     "id" => $user['id'],
